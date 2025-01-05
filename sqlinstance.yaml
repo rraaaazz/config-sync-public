@@ -1,0 +1,11 @@
+piVersion: sql.cnrm.cloud.google.com/v1beta1
+kind: SQLInstance
+metadata:
+  name: git-cloud-sql-instance
+  namespace: config-control
+spec:
+  region: us-central1 # Replace with your desired region
+  databaseVersion: MYSQL_8_0 # Or POSTGRES_14, etc.
+  settings:
+    tier: db-custom-1-3840  # Choose an appropriate tier
+  # ... other configuration options ...
